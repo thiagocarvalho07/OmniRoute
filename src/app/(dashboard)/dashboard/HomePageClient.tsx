@@ -18,6 +18,7 @@ import { copyToClipboard } from "@/shared/utils/clipboard";
 import { getProviderDisplayLabel } from "@/shared/utils/providerDisplayLabel";
 import { useIsElectron, useOpenExternal } from "@/shared/hooks/useElectron";
 import { HomeProviderTopologySection } from "./HomeProviderTopologySection";
+import { HomeFleetStatusSection } from "./HomeFleetStatusSection";
 import { shouldShowProviderTopologyOnHome } from "./homeAppearance";
 import HomeRecentRequests from "../home/HomeRecentRequests";
 
@@ -1136,6 +1137,9 @@ export default function HomePageClient({ machineId }: HomePageClientProps) {
           </div>
         </Card>
       )}
+
+      {/* Hermes Fleet Combos & Status Section */}
+      <HomeFleetStatusSection />
 
       {showProviderTopologyOnHome && (
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-3">
