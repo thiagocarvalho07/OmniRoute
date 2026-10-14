@@ -388,7 +388,7 @@ export function HomeFleetStatusSection() {
                                   isPrimary
                                     ? "bg-primary/20 text-primary"
                                     : "bg-bg-subtle text-text-muted"
-                               刺激}`}
+                                }`}
                               >
                                 {idx + 1}
                               </span>
